@@ -80,6 +80,9 @@
 							<a href="#portfolio" class="scrollto">Chiripones</a>
 						</li>
 						<li>
+							<a href="#map" class="scrollto">{% trans "Trainings" %}</a>
+						</li>
+						<li>
 							<a href="#contact" class="scrollto">{% trans "Contact Me" %}</a>
 						</li>
 					</ul>
@@ -570,9 +573,11 @@
 		MAP
 		=============================================== -->
 		<section id="map">
-		
+		  <div class="container">
+		    <h1 class="section-title big-text scrollimation fade-up">{% trans "Trainings" %}</h1>
+		    {{ html_chunks.trainings }}
 			<div id="gmap"></div>
-		
+		  </div>
 		</section>
 		
 		<!-- ==============================================
@@ -618,14 +623,13 @@
 		<script>
 		
 			var mapPoint = {
-					'lat': 40.720099,
-					'lng': -74.005764,
+					'lat': 37.398446,
+					'lng': -6.008875,
 					'zoom' : 15,
-					'infoText':'<p>250 W Broadway\
-								<br/>New York\
-								<br/>NY 10013</p>',
-					'linkText':'View on Google Maps',
-					'mapAddress':'250 W Broadway, New York, NY 10013',
+					'infoText':'<p>Monasterio de la Cartuja\
+								<br/>Sevilla</p>',
+					'linkText':'{% trans "View on Google Maps" %}',
+					'mapAddress':'Monasterio de la Cartuja, Sevilla, 41092',
 					'icon': '{{ STATIC_URL }}images/pin-dark.png'
 				};
 			
