@@ -57,6 +57,7 @@ INSTALLED_APPS = (
     'suit',  # has to be before django admin
     'django.contrib.admin',
     'django_summernote',
+    'rosetta',
     # FDU apps
     'landing',
     'chunks',
@@ -95,6 +96,10 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_L10N = True
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 USE_TZ = True
 
