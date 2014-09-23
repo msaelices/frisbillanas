@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>{% load i18n %}
 <html lang="en-US" class="no-js">
 	<head>
 
@@ -68,13 +68,13 @@
 				<div id="site-nav" class="navbar-collapse collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="sr-only">
-							<a href="#home" class="scrollto">Home</a>
+							<a href="#home" class="scrollto">{% trans "Home" %}</a>
 						</li>
 						<li>
 							<a href="#services" class="scrollto">What I Do</a>
 						</li>
 						<li>
-							<a href="#about" class="scrollto">About Me</a>
+							<a href="#about" class="scrollto">{% trans "About Frisbillanas" %}</a>
 						</li>
 						<li>
 							<a href="#portfolio" class="scrollto">My Works</a>
@@ -172,11 +172,7 @@
 					
 					<div class="col-sm-6 scrollimation fade-left d3">
 					
-						<h1 class="big-text">I am <br/>Jane Doe </h1>
-						
-						<p class="lead">I am Jane Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic &amp; Web Design, from the University of Pasadena.</p>
-					
-						<p>I am passionate about combining function, interaction and form to design for fitting user experiences that make people happy. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.</p>
+						{{ html_chunks.about }}
 					
 					</div>
 				

@@ -12,3 +12,6 @@ class HTMLChunk(models.Model):
 
     class Meta:
         translate = ('body', )
+
+    def __unicode__(self):
+        return self.code

@@ -4,3 +4,5 @@ django-inplaceedit
 django-transmeta
 django-suit==0.2.11
 django-summernote
+ipython
+ipdb
