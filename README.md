@@ -24,7 +24,6 @@ Install dependencies::
 
 Init BD::
 
-    $ mkdir erasmus/media
     $ python manage.py syncdb  --noinput --migrate
     $ python manage.py createsuperuser
     $ python manage.py collectstatic
