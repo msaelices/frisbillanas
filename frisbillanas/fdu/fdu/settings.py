@@ -10,6 +10,9 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
+gettext_noop = lambda s: s
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -28,21 +31,35 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
 
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.contrib.auth.context_processors.auth',
+    'django.core.context_processors.debug',
+    'django.core.context_processors.i18n',
+    'django.core.context_processors.media',
+    'django.core.context_processors.static',
+    'django.core.context_processors.tz',
+    'django.core.context_processors.request',
+    'django.contrib.messages.context_processors.messages',
+)
 
 ALLOWED_HOSTS = []
 
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'modeltranslation',
+    'inplaceeditform',
+    'suit',  # has to be before django admin
+    'django.contrib.admin',
+    'django_summernote',
     # FDU apps
     'landing',
+    'chunks',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,6 +85,11 @@ DATABASES = {
 
 LANGUAGE_CODE = 'es-es'
 
+LANGUAGES = (
+    ('en', gettext_noop('English')),
+    ('es', gettext_noop('Spanish')),
+)
+
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
@@ -81,6 +103,27 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# django-suit
+
+SUIT_CONFIG = {
+    'ADMIN_NAME': 'Frisbillanas',
+    # menu
+    'MENU_ICONS': {
+        'sites': 'icon-leaf',
+        'auth': 'icon-lock',
+        'home': 'fa fa-home'
+    },
+    'MENU_OPEN_FIRST_CHILD': True,  # Default True
+    'MENU': (
+        '-',
+        {'app': 'chunks', 'label': 'Fragmentos de texto', 'icon': 'fa fa-comments-o',},
+
+    ),
+
+    # misc
+    'LIST_PER_PAGE': 20
+}
 
 try:
     # Try import local settings

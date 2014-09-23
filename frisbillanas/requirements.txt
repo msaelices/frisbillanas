@@ -1,2 +1,6 @@
 Django==1.7
 django-modeltranslation==0.8b2
+django-inplaceedit
+django-transmeta
+django-suit==0.2.11
+django-summernote
