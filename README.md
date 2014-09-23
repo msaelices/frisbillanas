@@ -11,23 +11,23 @@ Clone project:
 
     $ git clone https://github.com/msaelices/frisbillanas.git
 
-Create a virtualenv::
+Create a virtualenv:
 
     $ cd frisbillanas
     $ virtualenv --no-site-packages --python=python2.7 venv
     $ source venv/bin/activate
 
-Install dependencies::
+Install dependencies:
 
     $ cd frisbillanas
     $ pip install -r requirements.txt
 
-Init BD::
+Init BD and other stuff:
 
-    $ python manage.py syncdb  --noinput --migrate
+    $ python manage.py migrate
     $ python manage.py createsuperuser
-    $ python manage.py collectstatic
+    $ python manage.py collectstatic --link
 
-Run webserver::
+Run webserver:
 
     $ python manage.py runserver
