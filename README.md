@@ -24,6 +24,7 @@ Install dependencies:
 
 Init BD and other stuff:
 
+    $ cd fdu
     $ python manage.py migrate
     $ python manage.py createsuperuser
     $ python manage.py collectstatic --link
