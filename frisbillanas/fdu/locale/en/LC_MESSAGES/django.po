@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-23 19:09+0000\n"
+"POT-Creation-Date: 2014-09-30 19:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,10 +42,10 @@ msgid "About Frisbillanas"
 msgstr ""
 
 #: templates/base.html:77
-msgid "Team"
+msgid "What's Ultimate?"
 msgstr ""
 
-#: templates/base.html:83 templates/base.html.py:577
+#: templates/base.html:83 templates/base.html.py:570
 msgid "Trainings"
 msgstr ""
 
@@ -58,9 +58,21 @@ msgid "Welcome to"
 msgstr ""
 
 #: templates/base.html:119
-msgid "The team"
+msgid "What's Ultimate"
 msgstr ""
 
-#: templates/base.html:631
+#: templates/base.html:127
+msgid "General Information"
+msgstr ""
+
+#: templates/base.html:136
+msgid "The rules"
+msgstr ""
+
+#: templates/base.html:146
+msgid "Tournaments"
+msgstr ""
+
+#: templates/base.html:624
 msgid "View on Google Maps"
 msgstr ""

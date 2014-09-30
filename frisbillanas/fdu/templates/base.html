@@ -74,7 +74,7 @@
 							<a href="#about" class="scrollto">{% trans "About Frisbillanas" %}</a>
 						</li>
 						<li>
-							<a href="#services" class="scrollto">{% trans "Team" %}</a>
+							<a href="#services" class="scrollto">{% trans "What's Ultimate?" %}</a>
 						</li>
 						<li>
 							<a href="#portfolio" class="scrollto">Chiripones</a>
@@ -116,7 +116,7 @@
 		
 			<div class="container">
 				
-				<h1 class="section-title big-text scrollimation fade-up">{% trans "The team" %}</h1>
+				<h1 class="section-title big-text scrollimation fade-up">{% trans "What's Ultimate" %}</h1>
 				
 				<div class="row">
 				
@@ -124,21 +124,18 @@
 					
 						<div class="service-icon"><i class="fa fa-lightbulb-o"></i></div>
 						
-						<h3>Brand Identity</h3>
+						<h3>{% trans "General Information" %}</h3>
 						
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-						
-						
+						{{ html_chunks.generalinformationaboutultimate }}
 					</div>
 				
 					<div class="col-sm-4 service-item color1 scrollimation scale-in d1">
 					
 						<div class="service-icon"><i class="fa fa-desktop "></i></div>
 						
-						<h3>Web Design</h3>
+						<h3>{% trans "The rules" %}</h3>
 						
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
-						
+						{{ html_chunks.ultimaterules }}
 						
 					</div>
 					
@@ -146,9 +143,9 @@
 					
 						<div class="service-icon"><i class="fa fa-rocket"></i></div>
 						
-						<h3>Rocket Science</h3>
+						<h3>{% trans "Tournaments" %}</h3>
 						
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo.</p>
+						{{ html_chunks.tournaments }}
 						
 					</div>
 					
@@ -521,12 +518,8 @@
 				<div class="row">
 				
 					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
-					
-						<h1 class="big-text">Contact Me</h1>
 						
-						<p class="lead">I am available for freelance. Can't wait for the next exciting project! Could be yours?</p>
-					
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, dui ac porta.</p>
+						{{ html_chunks.contactme }}
 					
 					</div>
 				
