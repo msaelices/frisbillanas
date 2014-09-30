@@ -328,11 +328,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #services.add-padding {
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 #services h1 {
-    margin-top: ;
     margin-bottom: 40px;
 }
 
@@ -400,7 +399,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .service-item p{
     margin: auto;
-    max-width: 250px;
+    max-width: 320px;
 }
 
 /*-----------------------

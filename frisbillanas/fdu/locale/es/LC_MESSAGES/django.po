@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 19:49+0000\n"
+"POT-Creation-Date: 2014-09-30 21:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,34 +46,54 @@ msgstr "Sobre Frisbillanas"
 msgid "What's Ultimate?"
 msgstr ""
 
-#: templates/base.html:83 templates/base.html.py:570
+#: templates/base.html:80 templates/base.html.py:196
+msgid "Players"
+msgstr ""
+
+#: templates/base.html:83 templates/base.html.py:452
 msgid "Trainings"
 msgstr "Entrenamientos"
 
-#: templates/base.html:86
+#: templates/base.html:89
 msgid "Contact Me"
 msgstr "Contactar"
 
-#: templates/base.html:102
+#: templates/base.html:105
 msgid "Welcome to"
 msgstr "Bienvenido a"
 
-#: templates/base.html:119
+#: templates/base.html:149
 msgid "What's Ultimate"
 msgstr "Qué es Ultimate"
 
-#: templates/base.html:127
+#: templates/base.html:157
 msgid "General Information"
 msgstr "Información general"
 
-#: templates/base.html:136
+#: templates/base.html:166
 msgid "The rules"
 msgstr "Las reglas"
 
-#: templates/base.html:146
+#: templates/base.html:176
 msgid "Tournaments"
 msgstr "Torneos"
 
-#: templates/base.html:624
+#: templates/base.html:202
+msgid "All"
+msgstr ""
+
+#: templates/base.html:205
+msgid "Stack"
+msgstr ""
+
+#: templates/base.html:208
+msgid "Handlers"
+msgstr ""
+
+#: templates/base.html:211
+msgid "Glory"
+msgstr ""
+
+#: templates/base.html:587
 msgid "View on Google Maps"
 msgstr "Ver en Google Maps"
