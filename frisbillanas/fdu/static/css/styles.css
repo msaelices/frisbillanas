@@ -296,19 +296,23 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #home .container{
     position: fixed;
-    top: 50%;
+    top: 45%;
     width: 100% !important;
     margin-top:-120px;
     z-index: -1;
+    background-color: white;
+    opacity: 0.8 !important;
 }
 
 #home p{
+    color: #b52a3a;
     margin: 0;
     font-size: 32px;
     font-weight: 400;
 }
 
 #home h1{
+    color: #b52a3a;
     margin:0;
     font-size: 82px;
     font-weight: 600;
@@ -316,7 +320,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #home h1 + p{
-    font-size: 28px;
+    font-size: 50px;
 }
 
 /*-----------------------
@@ -1233,6 +1237,27 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ----- Media Queries ----
 ------------------------*/
 
+@media (max-width:1100px){
+
+    #main-nav .container {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    #main-nav li{
+        margin:0 5px;
+    }
+    #main-nav .nav a,
+    #main-nav .nav a:active,
+    #main-nav .nav a:hover{
+        padding: 0;
+    }
+
+    .navbar-right {
+        width: 800px;
+    }
+}
+
 @media (max-width:991px){
     
     .big-text{
@@ -1246,10 +1271,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     #main-nav .nav a:active,
     #main-nav .nav a:hover{
         font-size:16px;
+        padding: 0;
     }
 
     #main-nav li{
         margin:0 5px;
+    }
+
+    #main-nav li a[href="#services"] {
+        display: none;
+    }
+
+    #site-nav {
+        margin-top: 0;
     }
 
     .percent{
@@ -1268,6 +1302,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     
     #project-slider{
         min-height:0;
+    }
+
+    .navbar-right {
+        width: 600px;
     }
 } 
 
