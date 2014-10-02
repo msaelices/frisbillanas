@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 23:33+0000\n"
+"POT-Creation-Date: 2014-10-02 17:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,11 @@ msgstr "Código"
 msgid "Body"
 msgstr "Cuerpo"
 
-#: fdu/settings.py:90
+#: fdu/settings.py:91
 msgid "English"
 msgstr "Inglés"
 
-#: fdu/settings.py:91
+#: fdu/settings.py:92
 msgid "Spanish"
 msgstr "Español"
 
@@ -46,21 +46,22 @@ msgstr "Sobre Frisbillanas"
 msgid "What's Ultimate?"
 msgstr "¿Qué es Ultimate?"
 
-#: templates/base.html:80 templates/base.html.py:196
-msgid "Players"
-msgstr "Jugadores"
-
-#: templates/base.html:83 templates/base.html.py:452
+#: templates/base.html:80 templates/base.html.py:452
 msgid "Trainings"
 msgstr "Entrenamientos"
 
-#: templates/base.html:89
+#: templates/base.html:86
 msgid "Contact Me"
 msgstr "Contactar"
 
-#: templates/base.html:105
+#: templates/base.html:103
 msgid "Welcome to"
 msgstr "Bienvenido a"
+
+#: templates/base.html:134
+#| msgid "About Frisbillanas"
+msgid "List of Frisbillanas players"
+msgstr "Lista de jugadores de Frisbillanas"
 
 #: templates/base.html:149
 msgid "What's Ultimate"
@@ -77,6 +78,10 @@ msgstr "Las reglas"
 #: templates/base.html:176
 msgid "Tournaments"
 msgstr "Torneos"
+
+#: templates/base.html:196
+msgid "Players"
+msgstr "Jugadores"
 
 #: templates/base.html:202
 msgid "All"
