@@ -299,9 +299,14 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     top: 45%;
     width: 100% !important;
     margin-top:-120px;
+    padding-left: 0;
+    padding-right: 0;
     z-index: -1;
+}
+
+#home .alpha {
     background-color: white;
-    opacity: 0.8 !important;
+    opacity: 0.8;
 }
 
 #home p{
