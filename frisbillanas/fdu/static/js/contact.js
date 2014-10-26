@@ -30,7 +30,7 @@ $(document).ready(function() {
 			$('#contact-form button').html('<i class="fa fa-times"></i>'+errorMessage);
 			setTimeout(function(){
 				$('#contact-form button').html(buttonCopy);
-			},2000);
+			}, 3000);
 		}
 		else {
 			$('#contact-form button').html('<i class="fa fa-spinner fa-spin"></i>'+sendingMessage);
@@ -43,7 +43,7 @@ $(document).ready(function() {
 				
 				setTimeout(function(){
 					$('#contact-form button').html(buttonCopy);
-				},2000);
+				}, 5000);
 				
 			});
 		}

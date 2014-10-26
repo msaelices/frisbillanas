@@ -489,6 +489,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 -------------------------*/
 
 #portfolio{
+    display: none;
     padding-top:70px;
     background:url('../images/bg-portfolio.jpg') no-repeat fixed;
     background-size:cover;
