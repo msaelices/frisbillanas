@@ -581,11 +581,20 @@
 			var mapPoint = {
 					'lat': 37.398446,
 					'lng': -6.008875,
-					'zoom' : 15,
 					'infoText':'<p>Monasterio de la Cartuja\
 								<br/>Sevilla</p>',
 					'linkText':'{% trans "View on Google Maps" %}',
 					'mapAddress':'Monasterio de la Cartuja, Sevilla, 41092',
+					'icon': '{{ STATIC_URL }}images/pin-dark.png'
+				};
+
+			var mapPoint2 = {
+					'lat': 37.385146,
+					'lng': -6.014959,
+					'infoText':'<p>Instalaciones deportivas<br/>Charco de la Pava\
+								<br/>Sevilla</p>',
+					'linkText':'{% trans "View on Google Maps" %}',
+					'mapAddress':'37.385146 -6.014959',
 					'icon': '{{ STATIC_URL }}images/pin-dark.png'
 				};
 			

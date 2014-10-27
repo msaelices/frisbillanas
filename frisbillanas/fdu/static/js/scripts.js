@@ -287,9 +287,10 @@ $(document).ready(function() {
 		var infoWindow = new google.maps.InfoWindow;
 		
 		var pointLatLng = new google.maps.LatLng(mapPoint.lat, mapPoint.lng);
+		var pointLatLng2 = new google.maps.LatLng(mapPoint2.lat, mapPoint2.lng);
 
 		var mapOptions = {
-			zoom: mapPoint.zoom,
+			zoom: 13,
 			center: pointLatLng,
 			zoomControl : true,
 			panControl : false,
@@ -305,15 +306,29 @@ $(document).ready(function() {
 		var marker = new google.maps.Marker({
 			position: pointLatLng, 
 			map: map, 
-			title:mapPoint.linkText,
+			title: mapPoint.linkText,
 			icon: mapPoint.icon
+		});
+
+		var marker2 = new google.maps.Marker({
+			position: pointLatLng2, 
+			map: map, 
+			title: mapPoint2.linkText,
+			icon: mapPoint2.icon
 		});
 		
 		var mapLink = 'https://www.google.com/maps/preview?ll='+mapPoint.lat+','+mapPoint.lng+'&z=14&q='+mapPoint.mapAddress;
+
+		var mapLink2 = 'https://www.google.com/maps/preview?ll='+mapPoint2.lat+','+mapPoint2.lng+'&z=14&q='+mapPoint2.mapAddress;
 		
 		var html = '<div class="infowin">'
 				+ mapPoint.infoText
 				+ '<a href="'+mapLink+'" target="_blank">'+mapPoint.linkText+'</a>'
+				+ '</div>';
+
+		var html2 = '<div class="infowin">'
+				+ mapPoint2.infoText
+				+ '<a href="'+mapLink2+'" target="_blank">'+mapPoint2.linkText+'</a>'
 				+ '</div>';
 
 		google.maps.event.addListener(marker, 'mouseover', function() {
@@ -321,8 +336,17 @@ $(document).ready(function() {
 			infoWindow.open(map, marker);
 		});
 
+		google.maps.event.addListener(marker2, 'mouseover', function() {
+			infoWindow.setContent(html2);
+			infoWindow.open(map, marker2);
+		});
+
 		google.maps.event.addListener(marker, 'click', function() {
 			window.open(mapLink,'_blank');
+		});
+
+		google.maps.event.addListener(marker2, 'click', function() {
+			window.open(mapLink2,'_blank');
 		});
 		
 	}
