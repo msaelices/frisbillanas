@@ -45,6 +45,7 @@ ALLOWED_HOSTS = []
 
 ADMINS = (
     'msaelices@gmail.com',
+    'berto.suero@gmail.com',
 )
 
 # Application definition
