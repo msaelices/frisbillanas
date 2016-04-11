@@ -7,3 +7,4 @@ django-rosetta==0.7.4
 django-summernote
 ipython
 ipdb
+gunicorn==19.4.5
