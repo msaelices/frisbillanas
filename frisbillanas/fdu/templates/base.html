@@ -79,12 +79,11 @@
 						<li>
 							<a href="#map" class="scrollto">{% trans "Trainings" %}</a>
 						</li>
-						<!--<li>
-							<a href="#chiripones" class="scrollto">Chiripones</a>
-						</li>-->
+                        {% if show_chiripones %}
 						<li>
-							<a href="#ce-playa-2017" class="scrollto">{% trans "CE Open/Women Playa 2017" %}</a>
+							<a href="#chiripones" class="scrollto">Chiripones</a>
 						</li>
+                        {% endif %}
 						<li>
 							<a href="#contact" class="scrollto">{% trans "Contact Me" %}</a>
 						</li>
@@ -458,10 +457,10 @@
 		  </div>
 		</section>
 
+        {% if show_chiripones %}
 		<!-- ==============================================
 		Chiripones
 		=============================================== -->
-		<!--
 		<section id="chiripones" class="add-padding bg-color4">
 
 			<div class="container">
@@ -485,11 +484,13 @@
 			</div>
 
 		</section>
-		-->
+
+        {% endif %}
 
 		<!-- ==============================================
 		CE Open/Women Playa 2017
 		=============================================== -->
+        <!--
 		<section id="ce-playa-2017" class="add-padding bg-color3">
 
 			<div class="container">
@@ -520,6 +521,7 @@
 			</div>
 
 		</section>
+        -->
 
 		<!-- ==============================================
 		CONTACT

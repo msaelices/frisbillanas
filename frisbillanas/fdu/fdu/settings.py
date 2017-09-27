@@ -115,6 +115,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+CHIRIPONES_REGISTRATION_DATE = (10, 1)
+
 # django-suit
 
 SUIT_CONFIG = {
