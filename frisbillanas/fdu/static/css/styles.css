@@ -77,11 +77,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .bg-color4 {
     color:#fff;
-    background: #ffa5be;
+    background: #ff3f74;
 }
 
 .bg-color4 a {
-    color: darkred;
+    color: #fff;
+    text-decoration: underline;
 }
 
 .border-bottom-color2{
